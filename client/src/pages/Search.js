@@ -2,6 +2,7 @@ import React from "react";
 import Form from "../components/Form";
 import Results from "../components/Results";
 import API from "../utils/API";
+import Header from "../components/Header";
 
 class Search extends React.Component {
   state = {
@@ -50,6 +51,7 @@ class Search extends React.Component {
   render() {
     return (
       <div>
+        <Header />
         <Form
           search={this.state.search}
           handleInputChange={this.handleInputChange}

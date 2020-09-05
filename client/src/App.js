@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import NavBar from "./components/NavBar";
-import Header from "./components/Header";
 import Footer from "./components/Footer";
 
 import NoMatch from "./pages/NoMatch";
@@ -14,7 +13,6 @@ class App extends Component {
       <Router>
         <div>
           <NavBar />
-          <Header />
           <Switch>
             <Route exact path="/" component={Search} />
             <Route exact path="/search" component={Search} />

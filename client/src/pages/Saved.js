@@ -15,13 +15,17 @@ class Saved extends Component {
 
   render() {
     return (
-      <div className="container mt-5">
-        <h3>
-          Your Collection{" "}
-          <span style={{ color: "grey" }}>
-            <i className="fas fa-book-reader"></i>
-          </span>
-        </h3>
+      <div className="container">
+        <div className="jumbotron bg-white text-center mt-6">
+          <h3>
+            Your{" "}
+            <span style={{ color: "grey" }}>
+              <i className="fas fa-book-reader"></i>
+            </span>{" "}
+            Collection
+          </h3>
+        </div>
+
         <Results books={this.state.savedBooks} />
       </div>
     );
