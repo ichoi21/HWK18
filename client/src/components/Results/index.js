@@ -38,7 +38,7 @@ class Results extends Component {
     return (
       <div>
         {!this.props.books.length ? (
-          <h2 className="text-center mt-4">No Results to Display</h2>
+          <h3 className="text-center mt-4">No Results to Display</h3>
         ) : (
           <div>
             {this.props.books.map((result) => (
@@ -54,7 +54,7 @@ class Results extends Component {
                   <div className="col-md-10">
                     <div className="card-body">
                       <h5 className="card-title font-bold">{result.title}</h5>
-                      <h6 className="card-title text-muted">
+                      <h6 className="card-title text-muted font-italic">
                         By {result.authors}
                       </h6>
                       <p className="card-text">{result.description}</p>

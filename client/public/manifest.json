@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "React GBooks App",
+  "name": "Create a React App for HWK with sample",
   "icons": [
     {
       "src": "favicon.ico",
