@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import API from "../../utils/API";
+import "./styles.css";
 
 class Results extends Component {
   state = {
@@ -55,7 +56,8 @@ class Results extends Component {
                     <div className="card-body">
                       <h5 className="card-title font-bold">{result.title}</h5>
                       <h6 className="card-title text-muted font-italic">
-                        By {result.authors}
+                        By{" "}
+                        {result.authors ? result.authors.join(", ") : "Unknown"}
                       </h6>
                       <p className="card-text">{result.description}</p>
                       <div>
